@@ -1,0 +1,11 @@
+<h1>Real Time Chat</h1>
+<ul>
+  <li *ngFor="let message of messages | async">
+    {{message.name}}
+  </li>
+</ul>
+<div>
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Title..">
+  <textarea [(ngModel)]="position" name="position" placeholder="Content.."></textarea>
+  <button (click)="newMessage()">Send message</button>
+</div>

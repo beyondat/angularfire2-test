@@ -1,0 +1,12 @@
+{
+  "rules":
+  {
+    ".read": "auth != null",
+    ".write": "auth != null",
+      "chat_messages":
+      	{
+          ".read": true,
+          ".write": true,
+  		}
+  }
+}
